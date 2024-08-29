@@ -1,0 +1,502 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #282c34;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header:hover {
+  background-color: #3a3f47;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  transition: font-size 0.3s ease-in-out;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+section {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  margin-top: 20px;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 2em;
+  border-bottom: 2px solid #282c34;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+section h2:hover {
+  color: #282c34;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+ul li:hover {
+  transform: translateX(10px);
+  color: #282c34;
+}
+
+a {
+  color: #282c34;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #3a3f47;
+  text-decoration: underline;
+}
+
+.project {
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+.project h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.project p {
+  margin: 10px 0;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.contact-info a {
+  color: #282c34;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+  color: #3a3f47;
+}
+
+/* Hero Section */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Card Overlay */
+/* General Card Overlay Styles */
+.card-overlay {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2em;
+  border-radius: 8px;
+  position: relative;
+  height: 300px; /* Default height */
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card-overlay h3 {
+  font-size: 1.8rem; /* Default font size for h3 */
+  margin: 0;
+  font-weight: bold;
+}
+
+.card-overlay p {
+  font-size: 1rem; /* Default font size for p */
+  margin: 0.5em 0;
+  line-height: 1.4;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .card-overlay {
+    height: 250px;
+  }
+
+  .card-overlay h3 {
+    font-size: 1.6rem; /* Slightly smaller font size for h3 */
+  }
+
+  .card-overlay p {
+    font-size: 0.9rem; /* Slightly smaller font size for p */
+  }
+}
+
+@media (max-width: 992px) {
+  .card-overlay {
+    height: 220px;
+  }
+
+  .card-overlay h3 {
+    font-size: 1.4rem; /* Further reduced font size for h3 */
+  }
+
+  .card-overlay p {
+    font-size: 0.85rem; /* Further reduced font size for p */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-overlay {
+    height: 200px;
+    padding: 1.5em; /* Adjust padding for smaller screens */
+  }
+
+  .card-overlay h3 {
+    font-size: 1.2rem; /* Smaller font size for h3 */
+  }
+
+  .card-overlay p {
+    font-size: 0.8rem; /* Smaller font size for p */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-overlay {
+    height: 180px;
+    padding: 1em; /* Adjust padding for very small screens */
+  }
+
+  .card-overlay h3 {
+    font-size: 1rem; /* Smaller font size for h3 */
+  }
+
+  .card-overlay p {
+    font-size: 0.5rem; /* Smaller font size for p */
+  }
+}
+
+@media (max-width: 320px) {
+  .card-overlay {
+    height: 160px; /* Further reduced height for very small screens */
+    padding: 0.5em; /* Reduced padding for very small screens */
+  }
+
+  .card-overlay h3 {
+    font-size: 0.9rem; /* Further reduced font size for h3 */
+  }
+
+  .card-overlay p {
+    font-size: 0.5rem; /* Further reduced font size for p */
+  }
+}
+/* Text Color Classes */
+.red-text {
+  color: red;
+}
+
+.teal-text {
+  color: teal;
+}
+
+.cyan-text {
+  color: cyan;
+}
+
+.grey-text {
+  color: grey;
+}
+
+.black-text {
+  color: black;
+}
+
+.card-block {
+  margin: 1em;
+}
+
+li {
+  list-style: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  header p {
+    font-size: 1.1em;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  section h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  section h2 {
+    font-size: 1.6em;
+  }
+
+  .project h3 {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  section h2 {
+    font-size: 1.4em;
+  }
+
+  .project h3 {
+    font-size: 1.2em;
+  }
+
+  .contact-info p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  header p {
+    font-size: 0.8em;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  section h2 {
+    font-size: 1.2em;
+  }
+
+  .project h3 {
+    font-size: 1.1em;
+  }
+
+  .contact-info p {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card-overlay {
+    height: 200px;
+    margin: 10px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.contact-options {
+  text-align: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  margin: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Message Me Button */
+.btn-message {
+  background-color: red;
+  color: white;
+}
+
+/* Get My CV Button */
+.btn-cv {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+.btn-cv:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+
+/* Container for social links */
+.home-hero__socials {
+  display: flex;
+  justify-content: center; /* Center the icons */
+  gap: 20px; /* Space between each icon */
+  margin-top: 20px; /* Space above the icons */
+}
+
+/* Individual social icon container */
+.home-hero__social {
+  display: flex;
+  align-items: center;
+}
+
+/* Link styling for social icons */
+.home-hero__social-icon-link {
+  text-decoration: none;
+  color: inherit; /* Keeps the default color unless specified */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Icon styling */
+.home-hero__social-icon {
+  font-size: 24px; /* Adjust icon size */
+}
+
+/* Hover effect for social links */
+.home-hero__social-icon-link:hover .home-hero__social-icon {
+  color: #0073b1; /* Change the color on hover (example: LinkedIn blue) */
+}
+
+/* Specific color customization for each social icon */
+.home-hero__social-icon-link:hover .fa-linkedin {
+  color: #0077b5;
+}
+
+.home-hero__social-icon-link:hover .fa-github {
+  color: #333;
+}
+
+.home-hero__social-icon-link:hover .fa-twitter {
+  color: #1da1f2;
+}
+
+.home-hero__social-icon-link:hover .fa-instagram {
+  color: #e1306c;
+}
+
+.home-hero__social-icon-link:hover .fa-facebook {
+  color: #1877f2;
+}
+
+.home-hero__social-icon-link:hover .fa-youtube {
+  color: #ff0000;
+}
+
+
+/* Button container */
+.btn .btn-message {
+  position: right; /* Fixes the button to the screen */
+  right: 20px; /* Adjust this value for more or less padding from the right edge */
+  bottom: 20px; /* Adjust this value for more or less padding from the bottom edge */
+  background-color: red; /* Button background color */
+  color: white; /* Button text color */
+  padding: 12px 24px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from the link */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Make text bold */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  z-index: 1000; /* Ensures the button appears on top of other elements */
+}
+
+/* Hover effect */
+.btn-message:hover {
+  background-color: darkred; /* Darker red on hover */
+}
